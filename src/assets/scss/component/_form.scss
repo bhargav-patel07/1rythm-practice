@@ -5,19 +5,17 @@
     height: 100%;
 }
 
-.profile-pic {
+.profile-pic>input {
     height: 100px;
-    width: 130px;
+    width: 127px;
+    display: none;
 }
 
 .car-container {
-    height: 810px;
+    height: 800px;
     width: 950px;
 }
 
-.logo {
-    height: 26px;
-    padding-left: 35px;
-    margin-top: -15px;
-    right: -0.4px;
+.me-n1 {
+    margin-right: 180px;
 }

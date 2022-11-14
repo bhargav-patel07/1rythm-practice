@@ -6,120 +6,140 @@
                 <img src="../../../assets/images/1Rhythm logo.png" alt="" class="img-fluid">
             </div>
 
-            <div class="car-container col-lg-7 col-md-12 col-sm-12 bg-white p-5 overflow-auto">
-                <div class="row">
-                    <h2>Create Your Account</h2>
-                    <span>Already have an account?<strong class="text-primary"> sign in</strong></span>
-                </div>
-                <!-- profile -->
-                <div class="profile-pic position-relative my-5 ">
-                    <img src="../../../assets/images/Vector.png" alt="">
-                    <div class="position-absolute text-dark top-100 ms-1 translate-middle logo">
-                        <img src="../../../assets/images/Vector (2).png" alt="">
+            <div class=" col-lg-7 col-md-12 col-sm-12 bg-white p-5 ">
+                <div class="card-container overflow-auto">
+                    <div>
+                        <h2>Create Your Account</h2>
+                        <span>Already have an account?<strong class="text-primary"> sign in</strong></span>
                     </div>
-                </div>
-                <!-- start:form -->
-                <form>
-                    <div class="row ">
-                        <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
-                            <!-- firstname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="firstname">FirstName <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" id="firstname" class="form-control "
-                                    placeholder="Enter Your FirstName" formControlName="firstname">
-                            </div>
+
+                    <!-- start:form -->
+                    <form>
+                        <!-- profile -->
+                        <div class="  my-4 row profile-pic">
+                            <label for="file-input">
+                                <div class="position-relative">
+                                    <img src="../../../assets/images/Vector.png" alt="" class="">
+                                    <label
+                                        class="btn-gradient profile-btn rounded-circle position-absolute text-center">
+                                        <i class="fa-solid fa-plus text-white"></i>
+                                    </label>
+                                </div>
+
+                            </label>
+                            <input type="file" id="file-input">
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
-                            <!-- lastname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="lastname">LastName <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" id="lastname" class="form-control " placeholder="Enter lastname"
-                                    formControlName="lastname" />
+                        <div class="row ">
+                            <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+                                <!-- firstname input -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="firstname">First Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="firstname" class="form-control "
+                                        placeholder="Enter Your FirstName" formControlName="firstname">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row   ">
-                        <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
-                            <!-- firstname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="firstname">FirstName <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" id="firstname" class="form-control "
-                                    placeholder="Enter Your FirstName" formControlName="firstname">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
-                            <!-- lastname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="lastname">LastName <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" id="lastname" class="form-control " placeholder="Enter lastname"
-                                    formControlName="lastname" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row   ">
-                        <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
-                            <!-- firstname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="firstname">FirstName <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" id="firstname" class="form-control "
-                                    placeholder="Enter Your FirstName" formControlName="firstname" />
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
-                            <!-- lastname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="lastname">LastName <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" id="lastname" class="form-control " placeholder="Enter lastname"
-                                    formControlName="lastname" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
-                            <!-- select country -->
-                            <div class="form-outline">
-                                <span class="fw-bold">Select Country<span class="text-danger">*</span></span>
-                                <div class="form-control mt-1"><img src="../../../assets/images/Frame 5.png" alt="">
+                            <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+                                <!-- lastname input -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="lastname">Last Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="lastname" class="form-control" placeholder="Enter lastname"
+                                        formControlName="lastname" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
-                            <!-- lastname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="lastname">LastName <span
-                                        class="text-danger">*</span></label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
+                        <div class="row   ">
+                            <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+                                <!-- email -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="email">Email <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="email" class="form-control " placeholder="Enter Your email"
+                                        formControlName="email">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+                                <!-- password -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="password">Password <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="password" class="form-control " placeholder="Enter lastname"
+                                        formControlName="lastname" />
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
-                            <!-- lastname input -->
-                            <div class="form-outline">
-                                <label class="form-label fw-bold" for="lastname">LastName <span
-                                        class="text-danger">*</span></label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
+                        <div class="row   ">
+                            <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+                                <!-- phone number -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="phone number ">Phone Number <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="phone number " class="form-control "
+                                        placeholder="Enter Your phone number " formControlName="phone number " />
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+                                <!-- select user type -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="user">Select User Type <span
+                                            class="text-danger">*</span></label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
-                <!-- end:form -->
-                <!-- note -->
-                <div class="row my-3 d-flex">
-                    <span class="fw-bold">note:</span>
+                        <div class="row ">
+                            <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+                                <!-- select country -->
+                                <div class="form-outline">
+                                    <span class="fw-bold">Select Country<span class="text-danger"> *</span></span><br>
+                                    <label for="state-file" class="mt-2">
+                                        <div class="form-control me-n1 d-flex justify-content-between">
+                                            <img src="../../../assets/images/Frame 5.png" alt="">
+                                            <div>
+                                                <i class="fa-solid fa-caret-down"></i>
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                    <input type="text" id="state-file" class="d-none">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                                <!-- selecter -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="lastname">LastName <span
+                                            class="text-danger">*</span></label>
+                                    <select id="inputState" class="form-control  ">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                                <!-- selecter -->
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="lastname">LastName <span
+                                            class="text-danger">*</span></label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- note -->
+                        <div class="row my-3 d-flex">
+                            <span class="fw-bold">note:</span>
+                        </div>
+                        <!-- sign button -->
+                        <button class="px-5 py-2 text-white rounded"><strong>Sign Up</strong></button>
+                    </form>
                 </div>
-                <!-- sign button -->
-                <button class="p-1 rounded px-5 mx-1">sign in</button>
+                <!-- end:form -->
             </div>
         </div>
     </div>
