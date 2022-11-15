@@ -5,17 +5,62 @@
     height: 100%;
 }
 
-.profile-pic>input {
+form {
+    .form-control:focus {
+        box-shadow: none;
+        border: 2px solid $primary;
+    }
+}
+
+.profile-pic {
     height: 100px;
     width: 127px;
-    display: none;
+
+    input {
+        display: none;
+    }
 }
 
-.car-container {
-    height: 800px;
-    width: 950px;
+@media (max-width:550px) {
+
+    .container {
+        padding: 16px;
+    }
+
+    .form-container {
+        height: 600px;
+        overflow: auto;
+        margin: 0 20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 30px;
+
+        img {
+            width: 320px;
+        }
+    }
 }
 
-.me-n1 {
-    margin-right: 180px;
+@media (max-width:990px) {
+
+    .container {
+        padding: 16px;
+    }
+
+    .form-container {
+        overflow: auto;
+        margin: 0 20px;
+        height: 650px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 30px;
+
+        img {
+            width: 350px;
+        }
+    }
 }
