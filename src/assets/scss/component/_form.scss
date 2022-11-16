@@ -72,9 +72,24 @@ form {
 }
 
 @media (max-height:700px) {
+    .container {
+        overflow: auto;
+        text-align: center;
+    }
+
     .form-container {
         overflow: auto;
         margin: 0 20px;
         height: 450px;
+        margin-left: 360px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 480px;
+
+        img {
+            width: 220px;
+        }
     }
 }
