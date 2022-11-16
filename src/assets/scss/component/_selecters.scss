@@ -5,3 +5,16 @@ select {
     background-position: right 0.7rem top 50%;
     background-size: 0.65rem auto;
 }
+
+form {
+    font-size: $fs-7;
+
+    .form-control {
+        font-size: 0.85rem;
+
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $primary;
+        }
+    }
+}

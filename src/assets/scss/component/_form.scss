@@ -5,17 +5,8 @@
     height: 100%;
 }
 
-form {
-    font-size: $fs-7;
-
-    .form-control {
-        font-size: 0.85rem;
-
-        &:focus {
-            box-shadow: none;
-            border: 1px solid $primary;
-        }
-    }
+.country-image {
+    height: 20px;
 }
 
 .profile-pic {
@@ -28,7 +19,6 @@ form {
 }
 
 @media (max-width:550px) {
-
     .container {
         padding: 16px;
     }
@@ -50,7 +40,6 @@ form {
 }
 
 @media (max-width:990px) {
-
     .container {
         padding: 16px;
     }
@@ -71,22 +60,19 @@ form {
     }
 }
 
-@media (max-height:700px) {
-    .container {
+@media (max-height:750px) {
+    section {
         overflow: auto;
-        text-align: center;
-    }
 
-    .form-container {
-        overflow: auto;
-        margin: 0 20px;
-        height: 450px;
-        margin-left: 360px;
+        .form-container {
+            overflow: auto;
+            margin: 0 20px;
+            height: 450px;
+        }
     }
 
     .logo {
         text-align: center;
-        margin-left: 480px;
 
         img {
             width: 220px;
