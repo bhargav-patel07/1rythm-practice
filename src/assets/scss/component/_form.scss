@@ -6,9 +6,15 @@
 }
 
 form {
-    .form-control:focus {
-        box-shadow: none;
-        border: 2px solid $primary;
+    font-size: $fs-7;
+
+    .form-control {
+        font-size: 0.85rem;
+
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $primary;
+        }
     }
 }
 
@@ -62,5 +68,13 @@ form {
         img {
             width: 350px;
         }
+    }
+}
+
+@media (max-height:700px) {
+    .form-container {
+        overflow: auto;
+        margin: 0 20px;
+        height: 450px;
     }
 }
