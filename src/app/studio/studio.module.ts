@@ -6,6 +6,8 @@ import { StudioListComponent } from './studio-list/studio-list.component';
 import { StudioDescriptionComponent } from './studio-description/studio-description.component';
 import { StudioBookingFormComponent } from './studio-booking-form/studio-booking-form.component';
 import { ManageStudioProfileComponent } from './manage-studio-profile/manage-studio-profile.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -14,11 +16,13 @@ import { ManageStudioProfileComponent } from './manage-studio-profile/manage-stu
     StudioListComponent,
     StudioDescriptionComponent,
     StudioBookingFormComponent,
-    ManageStudioProfileComponent
+    ManageStudioProfileComponent,
   ],
   imports: [
     CommonModule,
-    StudioRoutingModule
+    StudioRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class StudioModule { }

@@ -1,4 +1,4 @@
-<section class="background-image cursor-pointer  ">
+<section class="background-image cursor-pointer">
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center py-4">
             <!-- logo -->
@@ -18,10 +18,10 @@
                     <div class=" my-4 row profile-pic">
                         <label for="file-input">
                             <div class="position-relative">
-                                <img src="../../../assets/images/Vector.png" alt="" class="">
-                                <label class="btn-gradient profile-btn rounded-circle position-absolute text-center"
+                                <img src="../../../assets/images/Vector.png" alt="" class="rounded-circle">
+                                <label class=" btn-gradient profile-btn rounded-circle position-absolute text-center"
                                     for="file-input">
-                                    <i class="fa-solid fa-plus text-white "></i>
+                                    <i class="fa-solid fa-plus text-white"></i>
                                 </label>
                             </div>
 
@@ -67,7 +67,7 @@
                                 <label class="form-label fw-bold" for="password">Password <span
                                         class="text-danger">*</span></label>
                                 <input type="text" id="password" class="form-control " placeholder="Password"
-                                    formControlName="lastname" />
+                                    formControlName="password" />
                                 <span class="fs-7">“Password must required</span>
                             </div>
                         </div>
@@ -78,8 +78,8 @@
                             <div class="form-outline">
                                 <label class="form-label fw-bold" for="phone number ">Phone Number <span
                                         class="text-danger">*</span></label>
-                                <input type="text" id="phone number " class="form-control " placeholder="Phone Number "
-                                    formControlName="phone number " />
+                                <input type="text" id="phone number " class="form-control " placeholder="Phone Number"
+                                    formControlName="phone number" />
                                 <span class="fs-7">Lorem ipsum dolor sit amet.</span>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                             <div class="form-outline">
                                 <label class="form-label fw-bold" for="user">Select User Type <span
                                         class="text-danger">*</span></label>
-                                <select id="inputState" class="form-control">
+                                <select id="user" class="form-control">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                 </select>
@@ -99,9 +99,9 @@
                         <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-2">
                             <!-- select country -->
                             <div class="form-outline">
-                                <label class="form-label fw-bold">Select Country<span class="text-danger">
+                                <label class="form-label fw-bold" for="1">Select Country<span class="text-danger">
                                         *</span></label><br>
-                                <div for="state-file" class=" w-100">
+                                <div id="1" class=" w-100">
                                     <div class="form-control  d-flex justify-content-between">
                                         <img src="../../../assets/images/Frame 5.png" alt="" class="country-image">
                                         <div class="font-disable">
@@ -109,7 +109,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="image" id="state-file" class="d-none" value="india">
+                                <input type="image" id="1" class="d-none" value="india">
                             </div>
                         </div>
                         <div class="col-md-3 col-lg-3 col-xl-3 mt-2">
@@ -117,7 +117,7 @@
                             <div class="form-outline">
                                 <label class="form-label fw-bold" for="state">Select State <span
                                         class="text-danger">*</span></label>
-                                <select id="inputState" class="form-control  ">
+                                <select id="state" class="form-control  ">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                 </select>
@@ -128,7 +128,7 @@
                             <div class="form-outline">
                                 <label class="form-label fw-bold" for="city">Select City <span
                                         class="text-danger">*</span></label>
-                                <select id="inputState" class="form-control">
+                                <select id="city" class="form-control">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                 </select>
@@ -141,9 +141,9 @@
                         <p class=" fs-7"> Lorem ipsum dolor sit amet.</p>
                     </div>
                     <!-- sign button -->
-                    <button class="px-5 py-2 text-white rounded"><strong>Sign Up</strong></button>
+                    <button class="px-5 py-2 text-white rounded cursor-pointer border-0"><strong>Sign
+                            Up</strong></button>
                 </form>
-
                 <!-- end:form -->
             </div>
         </div>

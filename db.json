@@ -1,0 +1,28 @@
+{
+  "studioProfile": [
+    {
+      "id": 1,
+      "days": "monday"
+    },
+    {
+      "id": 2,
+      "days": "tuesday"
+    },
+    {
+      "id": 3,
+      "days": "wednesday"
+    },
+    {
+      "id": 4,
+      "days": "thursday"
+    },
+    {
+      "id": 5,
+      "days": "friday"
+    },
+    {
+      "id": 6,
+      "days": "satday"
+    }
+  ]
+}
