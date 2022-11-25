@@ -2,27 +2,15 @@
   "studioProfile": [
     {
       "id": 1,
-      "days": "monday"
+      "days": "recoprding room"
     },
     {
       "id": 2,
-      "days": "tuesday"
+      "days": "jamming room"
     },
     {
       "id": 3,
-      "days": "wednesday"
-    },
-    {
-      "id": 4,
-      "days": "thursday"
-    },
-    {
-      "id": 5,
-      "days": "friday"
-    },
-    {
-      "id": 6,
-      "days": "satday"
+      "days": "mixing and master room"
     }
   ]
 }

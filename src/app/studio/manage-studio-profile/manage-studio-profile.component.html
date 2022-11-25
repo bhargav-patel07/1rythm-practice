@@ -1,43 +1,23 @@
 <p>manage-studio-profile works!</p>
 <form [formGroup]="manageStudioForm">
     <div class="d-flex">
-        <div>
-            <span class="m-5 fw-bold">select studio days</span>
-            <div class="form-outline m-3">
-                <label class="form-label fw-bold" for="days">form <span class="text-danger">*</span></label>
-                <select id="days" class="form-control" formControlName="days">
-                    <option selected>choose</option>
-                    <option *ngFor="let item of manageStudioProfile">{{item.days}}</option>
-                </select>
-                <span *ngIf="function['days'].invalid && (function['days'].touched || function['days'].dirty)"
-                    class="text-danger">This field required</span>
-            </div>
-            <div class="form-outline m-3">
-                <label class="form-label fw-bold" for="days">form <span class="text-danger">*</span></label>
-                <select id="days" class="form-control" formControlName="days">
-                    <option selected></option>
-                    <option *ngFor="let item of manageStudioProfile">{{item.days}}</option>
-                </select>
-                <span *ngIf="function['days'].invalid && (function['days'].touched || function['days'].dirty)"
-                    class="text-danger">This field required</span>
-            </div>
-        </div>
-        <div>
-            <span class="m-5 fw-bold">select studio hours</span>
-            <div class="form-outline m-3">
-                <label class="form-label fw-bold" for="state">form <span class="text-danger">*</span></label>
-                <select id="inputState" class="form-control ">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-            </div>
-            <div class="form-outline m-3">
-                <label class="form-label fw-bold" for="state"> to <span class="text-danger">*</span></label>
-                <select id="inputState" class="form-control  ">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-            </div>
+        <div class="form-outline m-3">
+            <ng-select *ngIf="isMusicControlVisible && manageStudioProfile" [items]="manageStudioProfile"
+                [closeOnSelect]="false" labelForId="id" [multiple]="true" [searchable]="false" formControlName="days"
+                [bindLabel]="'days'">
+                <ng-template ng-option-tmp let-item="item" let-item$="item$" let-index="index">
+                    <div class="input-field">
+                        <input type="checkbox" [ngModel]="item$.selected" [ngModelOptions]="{standalone: true}"
+                            (change)="onClick()" />
+                        {{item['days']}}
+                        <div class="input">
+                            <input type="text" id="checked" [disabled]="isDisabled">
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-select>
+            <span *ngIf="function['days'].invalid && (function['days'].touched || function['days'].dirty)"
+                class="text-danger">This field required</span>
         </div>
     </div>
 </form>

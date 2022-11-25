@@ -5,6 +5,8 @@ import { ManageProfileComponent } from './manage-profile/manage-profile.componen
 import { CardComponent } from './card/card.component';
 import { PhoneMaskingDirective } from './directives/phone-masking.directive';
 import { SearchPipe } from './pipes/search.pipe';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +19,16 @@ import { SearchPipe } from './pipes/search.pipe';
     SearchPipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgSelectModule
+  ],
+  exports: [
+
+    FormsModule,
+    ReactiveFormsModule,
+    NgSelectModule
   ]
 })
 export class SharedModule { }

@@ -1,3 +1,22 @@
-select {
-    width: 300px;
+.ng-select {
+    width: 400px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox {
+    width: 10%;
+}
+
+.text {
+    width: 40%;
+    display: flex;
+    justify-content: left;
+}
+
+.input {
+    width: 50%;
 }
